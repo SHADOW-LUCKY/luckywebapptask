@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <link
+   rel="stylesheet"
+   href="https://bootswatch.com/4/lux/bootstrap.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+ </head>
+ <body>
+  <!--navegacion (NAVIGATION)-->
+  <nav class="navbar navbar-light bg-light" id="232">
+   <div class="container">
+    <a href="#" class="navbar-brand">TASKS APP by lucky</a>
+   </div>
+  </nav>
+  <!--main (cont principal)-->
+<div class="bak">
+    <div class="container">
+        <div class="row pt-5">
+         <div class="col-md-4">
+          <div class="card">
+           <div class="card-body">
+            <form id="formTask">
+             <div class="form-group">
+              <input
+               class="form-control"
+               type="text"
+               id="title"
+               placeholder="add a task (here if you dont know where)"
+              />
+             </div>
+             <div class="form-group">
+              <textarea
+               id="description"
+               cols="8"
+               rows="10"
+               placeholder="you can be more especific here"
+               class="form-control"
+              ></textarea>
+             </div>
+     <div><h6 class="cen">priority</h6></div>
+             <div class="form-group">
+                 <div class="priority">
+                     <div>
+                      <img src="img/Easy.jpg" />
+                      <h6 class="cen">relax</h6>
+                     </div>
+                     <div>
+                      <img src="img/Normal-0.jpg" />
+                      <h6 class="cen">not now</h6>
+                     </div>
+                     <div>
+                      <img src="img/Hard.jpg" />
+                      <h6 class="cen">worrying</h6>
+                     </div>
+                     <div>
+                      <img src="img/Harder.jpg" />
+                      <h6 class="cen">alarming</h6>
+                     </div>
+                     <div>
+                      <img src="img/Insane.jpg" />
+                      <h6 class="cen">TMR</h6>
+                     </div>
+                     <div>
+                      <img src="img/Demon.jpg" />
+                      <h6 class="cen">D.O.I.T</h6>
+                     </div>
+                     </div class ="try" >
+                     <select id="priority">
+                      <option selected="selected" value="N/A">N/A</option>
+                      <option value="relax">relax</option>
+                      <option value="not now">not now</option>
+                      <option value="worrying">worrying</option>
+                      <option value="alarming">alarming</option>
+                      <option value="TMR">TMR</option>
+                      <option value="D.O.I.T">D.O.I.T</option>
+                     </select>
+                    </div>
+             
+             <button type="submit" class="btn btn-block btn-primary">Save</button>
+            </form>
+           </div>
+          </div>
+         </div>
+         <div class="col-md-8">
+          <div id="tasks"></div>
+         </div>
+        </div>
+       </div>
+</div>
+ 
+  <script src="java.js"></script>
+ </body>
+</html>
